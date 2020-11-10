@@ -1,1 +1,0 @@
-git config [--global | --local] diff.xdoc2txt.textconv 'xdoc2txt.exe -8'
