@@ -15,5 +15,6 @@
 *.PDF	 diff=astextplain
 *.rtf	 diff=astextplain
 *.RTF	 diff=astextplain
+
 *.xls	diff=xdoc2txt
 *.xlsx	diff=xdoc2txt
