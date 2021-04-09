@@ -43,7 +43,10 @@ for(i in 1:nrow(data)){
     taxa%<>%append(paste0(data$genero[i]," ",data$name[i]))
 }
 
+occ<-occurrence(states = "MG",taxa = taxa,type = "any")
+taxa<-occ$search.str
 taxa%<>%unique()
+
 taxa<-taxa[!taxa %in% NA]
 
 dframe<-flora::get.taxa(taxa,establishment = TRUE, drop = FALSE)
